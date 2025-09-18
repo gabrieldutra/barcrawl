@@ -24,12 +24,13 @@ export const fetchServerData = async (): Promise<ServerData> => {
   }
 
   try {
-    const response = await fetch("/api/server-data", {
+    const response = await fetch("https://raw.githubusercontent.com/gabrieldutra/barcrawl/refs/heads/main/public/server-data.json", {
       cache: "no-cache",
       headers: {
         "Cache-Control": "no-cache",
         Pragma: "no-cache",
       },
+      mode: "cors",
     });
 
     if (!response.ok) {

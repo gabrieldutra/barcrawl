@@ -2,7 +2,7 @@
   "currentBarIndex": 0,
   "hasStarted": false,
   "startTime": "2025-09-20T13:00:00-03:00",
-  "version": 2,
+  "version": 1,
   "bars": [
     {
       "id": 1,
@@ -22,7 +22,7 @@
       "id": 3,
       "time": "13:40",
       "name": "Bar du Pedro",
-      "address": "Esquina com - Rua Quimberlita 246, R. Ten. Freitas, 245",
+      "address": "Esquina com - Rua Quimberlita 246, Rua Ten. Freitas, 245",
       "coordinates": [-19.915476460590202, -43.914173031941445]
     },
     {
@@ -64,7 +64,7 @@
       "id": 9,
       "time": "15:40",
       "name": "Espeto da Esquina",
-      "address": "R. Bom Despacho",
+      "address": "Esquina com - Rua Bom Despacho, Rua Bocaiúva",
       "coordinates": [-19.915389373306088, -43.9139818761198]
     },
     {
