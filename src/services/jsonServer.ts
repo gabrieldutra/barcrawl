@@ -24,7 +24,13 @@ export const fetchServerData = async (): Promise<ServerData> => {
   }
 
   try {
-    const response = await fetch("https://raw.githubusercontent.com/gabrieldutra/barcrawl/refs/heads/main/public/server-data.json", {
+    // Use local API route in development to avoid CORS issues
+    const isDevelopment = process.env.NODE_ENV === 'development';
+    const url = isDevelopment 
+      ? "/api/server-data" 
+      : "https://raw.githubusercontent.com/gabrieldutra/barcrawl/refs/heads/main/public/server-data.json";
+    
+    const response = await fetch(url, {
       cache: "no-cache",
       headers: {
         "Cache-Control": "no-cache",
