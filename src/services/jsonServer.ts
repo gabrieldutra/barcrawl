@@ -24,7 +24,7 @@ export const fetchServerData = async (): Promise<ServerData> => {
   }
 
   try {
-    const response = await fetch("/server-data.json", {
+    const response = await fetch("/api/server-data", {
       cache: "no-cache",
       headers: {
         "Cache-Control": "no-cache",
