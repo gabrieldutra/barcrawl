@@ -16,7 +16,8 @@ const nextConfig = {
     return [
       {
         source: "/server-data.json",
-        destination: "https://raw.githubusercontent.com/gabrieldutra/barcrawl/refs/heads/main/public/server-data.json",
+        destination:
+          "https://raw.githubusercontent.com/gabrieldutra/barcrawl/refs/heads/main/public/server-data.json",
         permanent: true,
       },
     ];
