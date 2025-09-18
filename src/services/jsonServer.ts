@@ -24,19 +24,12 @@ export const fetchServerData = async (): Promise<ServerData> => {
   }
 
   try {
-    // Use local API route in development to avoid CORS issues
-    const isDevelopment = process.env.NODE_ENV === 'development';
-    const url = isDevelopment 
-      ? "/api/server-data" 
-      : "https://raw.githubusercontent.com/gabrieldutra/barcrawl/refs/heads/main/public/server-data.json";
-    
-    const response = await fetch(url, {
+    const response = await fetch("/server-data.json", {
       cache: "no-cache",
       headers: {
         "Cache-Control": "no-cache",
         Pragma: "no-cache",
       },
-      mode: "cors",
     });
 
     if (!response.ok) {

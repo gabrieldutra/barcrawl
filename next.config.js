@@ -11,6 +11,17 @@ const nextConfig = {
     formats: ["image/webp", "image/avif"],
   },
 
+  // Redirects
+  async redirects() {
+    return [
+      {
+        source: "/server-data.json",
+        destination: "https://raw.githubusercontent.com/gabrieldutra/barcrawl/refs/heads/main/public/server-data.json",
+        permanent: true,
+      },
+    ];
+  },
+
   // Headers de segurança
   async headers() {
     return [
