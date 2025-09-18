@@ -1,8 +1,8 @@
 {
-  "currentBarIndex": 1,
-  "hasStarted": true,
+  "currentBarIndex": 0,
+  "hasStarted": false,
   "startTime": "2025-09-20T13:00:00-03:00",
-  "version": 2,
+  "version": 3,
   "bars": [
     {
       "id": 1,
