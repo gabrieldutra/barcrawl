@@ -10,7 +10,7 @@ import { useBarCrawlWithServer } from "@/hooks/useBarCrawlWithServer";
 
 export default function Home() {
   const [focusedBarIndex, setFocusedBarIndex] = useState<number | undefined>();
-  const { state, serverState } = useBarCrawlWithServer(5000);
+  const { state, serverState } = useBarCrawlWithServer(10000);
 
   // Focar automaticamente no bar atual quando ele mudar
   useEffect(() => {
